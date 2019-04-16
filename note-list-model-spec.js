@@ -21,3 +21,12 @@ function addNotes() {
 };
 
 addNotes();
+
+function returnAllNotes() {
+  var noteList = new NoteList;
+  var note = new Note;
+  noteList.addNote(note);
+  assert.isTrue(isEqual(noteList.returnAll(), [note]));
+};
+
+returnAllNotes();
