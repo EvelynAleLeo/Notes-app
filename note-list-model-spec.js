@@ -30,3 +30,15 @@ function returnAllNotes() {
 };
 
 returnAllNotes();
+
+
+function newNote() {
+  var noteList = new NoteList;
+  var yoda = new Note("Yoda is awesome!");
+  noteList.newNote("Yoda is awesome!");
+  assert.isTrue(isEqual(noteList.list[0], yoda));
+};
+
+newNote();
+
+
