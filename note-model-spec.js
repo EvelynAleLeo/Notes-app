@@ -12,3 +12,10 @@ function instantiatedWithText() {
 };
 
 instantiatedWithText();
+
+function returnTheText() {
+  var textNote = new Note("Here is the text");
+  assert.isTrue(textNote.returnText() === "Here is the text");
+};
+
+returnTheText();
